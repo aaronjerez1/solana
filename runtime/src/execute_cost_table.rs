@@ -50,7 +50,7 @@ impl ExecuteCostTable {
     }
 
     /// average cost of all recorded programs
-    pub fn get_average_units(&self) -> u64 {
+    pub fn get_global_average_units(&self) -> u64 {
         if self.table.is_empty() {
             self.get_default_units()
         } else {
